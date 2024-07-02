@@ -1,0 +1,130 @@
+{% extends "base.html" %} {% block content %}
+<html>
+    <head>
+      <style>
+  label {
+    margin-bottom: 5px;
+    margin-top: 3px;
+    color: rgb(0, 0, 0);
+  }
+
+  form-check {
+    color: rgb(0, 0, 0);
+  }
+</style>  
+    </head>
+    <body>
+       <form method="POST">
+        <h1 class="title" align="center">Sign Up</h1>
+    <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="name@example.com"
+    />
+  </div>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      name="firstName"
+      placeholder="Enter first name"
+    />
+  </div>
+  <label for="topicChecks">What specific topics are you interested in?</label>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="flexCheckDefualt"
+    />
+    <label class="form-check-label" for="flexCheckDefualt" id="Business"
+      >Sales and marketing</label
+    >
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="flexCheckDefualt"
+    />
+    <label class="form-check-label" for="flexCheckDefualt" id="Retail"
+      >Product managment</label
+    >
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="flexCheckDefualt"
+    />
+    <label class="form-check-label" for="flexCheckDefualt" id="Coding"
+      >Finance and Accounting</label
+    >
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="flexCheckDefualt"
+    />
+    <label class="form-check-label" for="flexCheckDefualt" id="Coding"
+      >Technical skills (Programming, math)</label
+    >
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="flexCheckDefualt"
+    />
+    <label class="form-check-label" for="flexCheckDefualt" id="Coding"
+      >Healthcare</label
+    >
+  </div>
+  <div class="form-group">
+    <label for="password1">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password1"
+      name="password1"
+      placeholder="Enter password"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password2">Password (Confirm)</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password2"
+      name="password2"
+      placeholder="Confirm password"
+    />
+  </div>
+  <br />
+  <button
+    type="submit"
+    class="btn btn-primary"
+    style="
+      --bs-btn-padding-y: 0.4rem;
+      --bs-btn-padding-x: 0.75rem;
+      margin-bottom: 8px;
+    "
+  >
+    Submit
+  </button>
+</form>  
+</html> 
+    </body>
+{% endblock %}
