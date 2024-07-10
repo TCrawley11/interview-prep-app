@@ -9,6 +9,10 @@ def home():
 @app.route("/sign-up")
 def sign_up_page():
     return render_template('sign_up.html')
+
+@app.route("/dashboard")
+def dashboard():
+    return render_template('dashboard.html')
     
 if __name__ == '__main__':
     app.run('0.0.0.0', debug=True)
